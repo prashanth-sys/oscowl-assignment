@@ -1,0 +1,56 @@
+POST http://localhost:3000/users/ 
+Content-Type: application/json 
+
+{
+  "username": "ram",
+  "password": "ram1234",
+  "email": "ram1234@gmail.com"
+} 
+
+### 
+
+POST http://localhost:3000/login/ 
+
+{
+  "username": "ram",
+  "password": "ram1234",
+} 
+
+
+###
+
+GET http://localhost:3000/todos/ 
+
+### 
+
+GET http://localhost:3000/todos/2
+
+### 
+
+POST http://localhost:3000/todos/ 
+Content-Type: application/json 
+
+{
+  "title": "Prepare for Job Interview",
+  "description": "Prepare answers for common full-stack developer interview questions and review the latest industry trends.",
+  "status": "in progress"
+}
+
+
+
+
+### 
+
+PUT http://localhost:3000/todos/1 
+Content-Type: application/json 
+
+{
+  "id":1,
+  "title": "Complete React.js tutorial",
+  "description": "Finish the remaining sections of the React.js tutorial on the official website to improve my front-end skills.",
+  "status": "pending"
+} 
+
+### 
+
+DELETE http://localhost:3000/todos/4
